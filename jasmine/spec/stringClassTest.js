@@ -30,6 +30,14 @@ describe('String class test', function() {
     });
   });
 
+  describe('ucFirst function', function() {
+
+    it('should change the first character of a string to upper case', function() {
+
+      expect("lowerCase".ucFirst()).toBe('LowerCase');
+    });
+  });
+
   describe('isQuestion function', function() {
 
     it('should return false for string that does not end with ?', function() {
@@ -63,7 +71,7 @@ describe('String class test', function() {
 
     it('should return a string formatted in currency mode', function() {
 
-      expect(3773763.12.toCurrency()).toEqual('3,773,763.12');
+      expect("3773763.12".toCurrency()).toEqual('3,773,763.12');
     });
   });
 

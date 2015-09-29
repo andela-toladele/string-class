@@ -28,6 +28,13 @@ String.prototype.toLower = function() {
   });
 }
 
+String.prototype.ucFirst = function(){
+
+  return this.replace(/^\w/, function(x){
+    return x.toUpperCase();
+  })
+}
+
 //Tests if a string ends with '?'
 //Returns true if yes, else return false
 String.prototype.isQuestion = function() {
@@ -51,7 +58,7 @@ String.prototype.wordCount = function() {
 }
 
 //Converts a number to currency mode
-Number.prototype.toCurrency = function() {
+String.prototype.toCurrency = function() {
 
   //Macthes any digit(and remembers it) that is followed by three digits or (x * 3) digits
   //where x is a positive integer, then followed by '.'
