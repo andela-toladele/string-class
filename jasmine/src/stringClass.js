@@ -5,8 +5,8 @@ String.prototype.hasVowels = function() {
   return /[aeiou]/.test(this);
 }
 
-//Replaces any upper case letter found in a string
-//with lower case equivalent
+//Replaces any lower case letter found in a string
+//with upper case equivalent
 String.prototype.toUpper = function() {
 
   //Gets the ascii code of matched upper case alphabet, adds 32 from it to
@@ -17,8 +17,8 @@ String.prototype.toUpper = function() {
 
 }
 
-//Replaces any lower case letter found in a string
-//with upper case equivalent
+//Replaces any upper case letter found in a string
+//with lower case equivalent
 String.prototype.toLower = function() {
 
   //Gets the ascii code of matched lower case alphabet, subtracts 32 from it to
@@ -59,7 +59,7 @@ String.prototype.wordCount = function() {
   return this.words().length;
 }
 
-//Converts a number to currency mode
+//Converts a string to currency mode
 String.prototype.toCurrency = function() {
 
   //Macthes any digit(and remembers it) that is followed by three digits or (x * 3) digits
