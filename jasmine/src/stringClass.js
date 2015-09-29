@@ -28,8 +28,10 @@ String.prototype.toLower = function() {
   });
 }
 
+//Returns the first character of a string in upper case
 String.prototype.ucFirst = function(){
 
+  //Matches the first word that start a string and returns it in upper case
   return this.replace(/^\w/, function(x){
     return x.toUpperCase();
   })
